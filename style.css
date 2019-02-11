@@ -1,7 +1,7 @@
-.container{
+.container2{
     width: 100vw;
     height: 100vh;
-    
+    margin-top:20vh;
     text-align: center;
 }
 
@@ -11,4 +11,18 @@ h1{
 
 body{
     background-image:linear-gradient(to right,red,yellow);
+}
+
+.done{
+    border:2px solid black;
+    color:white;
+}
+button:hover{
+    color:black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.hide{
+    display: none;
 }

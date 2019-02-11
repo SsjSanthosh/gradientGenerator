@@ -5,14 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <title>Make your gradients!</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container2">
+
         <h1>C H O O S E   Y O U R  C O L O U R S   </h1>
+
         <input type="color" id = "color1" value="#ff0000">
+
         <input type="color" name="" id="color2" value="#ffff00">
         <h3>linear-gradient(to right, rgb(255,0,0), rgb(255, 255, 0));</h3>
+
+        <div class="choose">
+            <h4>Choose your own direction OR angle</h4>
+            <button class="done" id="angle">Customize by angle</button>
+            <button class="done" id="direction">Customize by direction</button>
+        </div>
+
+
+        <div class="directionDiv hide">
+            <label for="directionSelect">Select gradient direction</label>
+            <select name="direction-value" id="directionSelect">
+                <option value="right">To Right</option>
+                <option value="left">To Left</option>
+                <option value="bottom-right">To Bottom Right</option>
+                <option value="bottom-left">To Bottom Left</option>
+                <option value="top-left">To Top Left</option>
+                <option value="top-right">To Top Right</option>
+                
+            </select>
+            <button id="directionButton" class = "done">Done</button>
+        </div>
+        <div class="angleDiv hide">
+            <label for="angleInput">Enter the angle of the gradient </label>
+            <input type="text" id="angleInput">
+            <button id="angleButton" class = "done">Done</button>
+        </div>
     </div>
 
 
