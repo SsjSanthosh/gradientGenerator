@@ -1,7 +1,7 @@
 .container2{
     width: 100vw;
     height: 100vh;
-    margin-top:15vh;
+    margin-top:16vh;
     text-align: center;
 }
 
@@ -10,13 +10,13 @@
 body{
     padding: 0;
     margin: 0;
-    background-image:linear-gradient(to right,red,yellow,green);
+    background-image:linear-gradient(to right,red,green,blue);
     
 }
 
 .done{
     border:2px solid black;
-    color:white;
+    animation: colorChange 40s infinite alternate;
 }
 .done:hover{
     color:black;
@@ -30,11 +30,11 @@ body{
 
 h1{
     font-family: 'Dosis', sans-serif;
-    @-webkit-animation: colorChange 40s infinite alternate; 
+    animation: colorChange 40s infinite alternate; 
     text-shadow: 4px 4px 4px white;
 }
 
-@-webkit-keyframes colorChange{
+@keyframes colorChange{
     0% {
         
         color: blue;

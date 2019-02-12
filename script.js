@@ -10,7 +10,7 @@ let angDone     = document.querySelector("#angleButton");
 let directionSelect   = document.querySelector("#directionSelect");
 let angleDiv    = document.querySelector(".angleDiv");
 let dirDiv      = document.querySelector(".directionDiv");
-let h1          = document.querySelector("h1")
+
 
 
 
