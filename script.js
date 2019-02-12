@@ -31,7 +31,7 @@ const changeColor= (e,dir="",angle="")=> {
         
     }
     document.body.style.background=gradient;
-    h3.textContent = document.body.style.background + ";"
+    h3.textContent = document.body.style.background + ";";
 }
 
 const toggleHide = (e)=>{

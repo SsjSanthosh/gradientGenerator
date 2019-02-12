@@ -30,7 +30,7 @@ body{
 
 h1{
     font-family: 'Dosis', sans-serif;
-    animation: colorChange 40s infinite alternate; 
+    @-webkit-animation: colorChange 40s infinite alternate; 
     text-shadow: 4px 4px 4px white;
 }
 
