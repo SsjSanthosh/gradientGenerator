@@ -1,7 +1,7 @@
 .container2{
     width: 100vw;
     height: 100vh;
-    margin-top:10vh;
+    margin-top:15vh;
     text-align: center;
 }
 
@@ -10,7 +10,8 @@
 body{
     padding: 0;
     margin: 0;
-    background-image:linear-gradient(to right,red,yellow);
+    background-image:linear-gradient(to right,red,yellow,green);
+    
 }
 
 .done{
@@ -25,4 +26,66 @@ body{
 
 .hide{
     display: none;
+}
+
+h1{
+    font-family: 'Dosis', sans-serif;
+    animation: colorChange 40s infinite alternate; 
+    text-shadow: 4px 4px 4px white;
+}
+
+@-webkit-keyframes colorChange{
+    0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
 }

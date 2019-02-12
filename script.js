@@ -1,5 +1,6 @@
 let input1      = document.getElementById("color1");
 let input2      = document.getElementById("color2");
+let input3      = document.getElementById("color3");
 let h3          = document.querySelector("h3");
 let dirButton   = document.querySelector("#direction");
 let angleButton = document.querySelector("#angle");
@@ -9,6 +10,7 @@ let angDone     = document.querySelector("#angleButton");
 let directionSelect   = document.querySelector("#directionSelect");
 let angleDiv    = document.querySelector(".angleDiv");
 let dirDiv      = document.querySelector(".directionDiv");
+let h1          = document.querySelector("h1")
 
 
 
@@ -18,14 +20,14 @@ const changeColor= (e,dir="",angle="")=> {
     let gradient = "";
     if (dir=="" && angle==""){
         
-        gradient=`linear-gradient(to right, ${input1.value}, ${input2.value} )`;
+        gradient=`linear-gradient(to right, ${input1.value}, ${input2.value}, ${input3.value} )`;
     }
     else if(angle==""){
-        gradient=`linear-gradient(to ${dir}, ${input1.value}, ${input2.value} )`;
+        gradient=`linear-gradient(to ${dir}, ${input1.value}, ${input2.value}, ${input3.value} )`;
         
     }
     else{
-        gradient=`linear-gradient(${angle}deg, ${input1.value}, ${input2.value} )`;
+        gradient=`linear-gradient(${angle}deg, ${input1.value}, ${input2.value}, ${input3.value} )`;
         
     }
     document.body.style.background=gradient;
@@ -61,6 +63,7 @@ const loadEvents = ()=>{
     angleButton.addEventListener("click",toggleHide);
     input1.addEventListener("input",changeColor);
     input2.addEventListener("input",changeColor);
+    input3.addEventListener("input",changeColor);
 }
 
 loadEvents();
